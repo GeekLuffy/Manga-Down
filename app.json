@@ -14,16 +14,17 @@
     "env": {
         "API_ID": {
             "description": "Get this value from https://my.telegram.org/apps",
-            "value": "",
+            "value": "27240462",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org/apps",
-            "value": "",
+            "value": "e6d011e39e3e84cad1e417bda13c7dda",
             "required": true
         },
         "BOT_TOKEN": {
             "description": "Get this value from @BotFather in telegram",
+            "value": "6840212597:AAGeboDdgMrJbMVNXNnPSdgUw8lvaCF-tks",
             "required": true
         },
         "CHANNEL": {
