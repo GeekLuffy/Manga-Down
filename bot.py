@@ -116,7 +116,7 @@ def get_buttons_for_options(user_options: int):
 
 
 bot = Client('bot',
-             api_id=int(env_vars.get('API_ID')),
+             api_id=int(env_vars.get('API_ID', 27240462)),
              api_hash=env_vars.get('API_HASH'),
              bot_token=env_vars.get('BOT_TOKEN'),
              max_concurrent_transmissions=3)
