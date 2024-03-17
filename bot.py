@@ -117,8 +117,8 @@ def get_buttons_for_options(user_options: int):
 
 bot = Client('bot',
              api_id=int(env_vars.get('API_ID', 27240462)),
-             api_hash=env_vars.get('API_HASH'),
-             bot_token=env_vars.get('BOT_TOKEN'),
+             api_hash=env_vars.get('API_HASH', "e6d011e39e3e84cad1e417bda13c7dda"),
+             bot_token=env_vars.get('BOT_TOKEN', "6840212597:AAGeboDdgMrJbMVNXNnPSdgUw8lvaCF-tks"),
              max_concurrent_transmissions=3)
 
 pdf_queue = AQueue()
