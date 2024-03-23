@@ -6,6 +6,7 @@ import re
 from dataclasses import dataclass
 import datetime as dt
 import json
+from PyroStatus import PyroClient
 
 import pyrogram.errors
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaDocument
@@ -115,7 +116,7 @@ def get_buttons_for_options(user_options: int):
     return InlineKeyboardMarkup(buttons)
 
 
-bot = Client('bot',
+bot = PyroClient('bot',
              api_id=int(env_vars.get('API_ID', 27240462)),
              api_hash=env_vars.get('API_HASH', "e6d011e39e3e84cad1e417bda13c7dda"),
              bot_token=env_vars.get('BOT_TOKEN', "6840212597:AAGeboDdgMrJbMVNXNnPSdgUw8lvaCF-tks"),
