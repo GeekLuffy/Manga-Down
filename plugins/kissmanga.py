@@ -8,7 +8,7 @@ from plugins.client import MangaClient, MangaCard, MangaChapter, LastChapter
 
 class KissMangaClient(MangaClient):
 
-    base_url = urlparse("http://kissmanga.in/")
+    base_url = urlparse("http://https://Likemanga.io/")
     search_url = urljoin(base_url.geturl(), "search")
     search_param = 'q'
 
