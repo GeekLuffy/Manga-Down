@@ -81,15 +81,15 @@ class KissMangaClient(MangaClient):
 
     async def search(self, query: str = "", page: int = 1) -> List[MangaCard]:
         query = quote_plus(query)
+        status = 'all'  # You can adjust this as needed
+        sortby = 'lastest-chap'  # You can adjust this as needed
 
-        request_url = f'{self.search_url}'
-
-        if query:
-            request_url += f'?{self.search_param}={query}'
-
+        request_url = f"{self.base_url.geturl()}?act=search&f[status]={status}&f[sortby]={sortby}&f[keyword]={query}"
+    
         content = await self.get_url(request_url)
-
+    
         return self.mangas_from_page(content)
+
 
     async def get_chapters(self, manga_card: MangaCard, page: int = 1) -> List[MangaChapter]:
 
